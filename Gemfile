@@ -44,6 +44,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
+
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby', '3.1.2'
 gem 'factory_girl_rails', '4.2.1'
